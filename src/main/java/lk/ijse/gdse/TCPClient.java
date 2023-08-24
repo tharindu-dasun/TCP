@@ -12,7 +12,7 @@ public class TCPClient {
         //01. client enter k sentence eka
         String sentence;
         //02. server eken capitalized karala dena sentence eka
-        String modifiedSentence;
+        String capitalizedSentence;
 
         //03. userge input eka ganna
         //System.in = inputStreamObject (inputStreamObject ta puluwan eka sarekata eka byte ekka gane read k)
@@ -39,10 +39,10 @@ public class TCPClient {
 
         //10. server eken modified sentence eka enawa eka ganna
         //(Server eken ena eke line eka read karanna)
-        modifiedSentence = inFromServer.readLine();
+        capitalizedSentence = inFromServer.readLine();
 
-        //11. print the modified sentence
-        System.out.println("FROM SERVER : " + modifiedSentence);
+        //11. print the modified sentence // modifiedSentence
+        System.out.println("FROM SERVER : " + capitalizedSentence);
 
         //12. connection eka awasan nisa socket eka close k
         clientSocket.close();
